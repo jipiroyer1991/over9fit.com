@@ -60,7 +60,7 @@ h3 { font-size: 19px; margin: 0; }
 
 /* Pages de texte */
 .texte-long { max-width: 72ch; padding-block: 40px 56px; display: grid; gap: 14px; }
-.texte-long h1 { font-size: clamp(30px, 5vw, 44px); margin-bottom: 6px; }
+.texte-long h1 { font-size: clamp(30px, 5vw, 44px); margin-bottom: 6px; hyphens: auto; overflow-wrap: anywhere; }
 .texte-long h2 { font-size: 22px; margin-top: 22px; text-shadow: none; }
 .texte-long p, .texte-long li { color: #DCCFCF; }
 .texte-long ul { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
@@ -80,6 +80,8 @@ details p { margin: 0 0 8px; }
 .langue li a { display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none; color: var(--texte); }
 .langue li a:hover, .langue li a:focus-visible { background: var(--fond); color: var(--neon); }
 .langue li a[aria-current="true"] { color: var(--neon); font-weight: 700; }
+/* Écran étroit : le menu prend la largeur de l'en-tête, sinon il sort par la gauche */
+@media (max-width: 480px) { .tete { position: relative; } .langue { position: static; } .langue ul { left: 0; right: 0; } }
 
 /* Titre en feu : la vidéo de flammes de l'app, le noir rendu transparent par le mode écran */
 .titre-feu { position: relative; width: min(620px, 100%); aspect-ratio: 1080 / 599; }
