@@ -1,0 +1,88 @@
+{
+ "meta": {
+  "code": "es",
+  "html_lang": "es",
+  "nom": "Español",
+  "prefixe": "/es/"
+ },
+ "commun": {
+  "nav_home": "Inicio",
+  "nav_support": "Soporte",
+  "nav_privacy": "Privacidad",
+  "langue": "Idioma",
+  "aria_nav": "Navegación principal",
+  "aria_pied": "Pie de página"
+ },
+ "accueil": {
+  "title": "Limit Breaker: el registro de entrenamiento donde cada nivel se gana",
+  "description": "Registro de entrenamiento para Android: anota tus series, sigue tus récords y sube de nivel solo cuando entrenas de verdad. Sin necesidad de cuenta, sin rastreadores, pago único.",
+  "h1": "Tu progreso se gana bajo la barra",
+  "chapeau": "Limit Breaker registra tus series en pocos toques, sigue tus récords y sube tu nivel — solo cuando entrenas de verdad.",
+  "bientot": "Próximamente en Google Play · Android",
+  "seance": {
+   "h2": "Tu sesión, registrada en pocos toques",
+   "p": "Empieza un entrenamiento: cada ejercicio se abre con tu última sesión ya anotada. Ajusta un peso o las repeticiones y luego guarda. La calculadora de discos te dice qué cargar a cada lado de la barra. Cada ejercicio puede llevar tu propia imagen: una foto tomada con tu teléfono o cualquier imagen que elijas.",
+   "alt_seance": "Sesión en curso: press de banca, con la última sesión ya anotada (195 × 3, 185 × 9, 175 × 7)",
+   "alt_disques": "Calculadora de discos: 195 lbs, es decir, 45 + 25 + 5 por lado, barra de 45 lbs incluida"
+  },
+  "niveau": {
+   "h2": "Tu nivel, y lo que te falta",
+   "p": "La pantalla de inicio te muestra tu nivel y cuántas sesiones te separan del siguiente. Una sesión es un día en que de verdad entrenaste: abrir la app no cuenta.",
+   "alt": "Pantalla de inicio de Limit Breaker en el nivel 18, con su aura dorada"
+  },
+  "auras": {
+   "h2": "27 niveles. Ninguno se compra.",
+   "p": "Cada nivel se gana bajo la barra, sesión tras sesión — y tu aura cambia por el camino.",
+   "legende": "Nivel {n}"
+  },
+  "records": {
+   "h2": "Tus récords, tu curva",
+   "p": "Cada serie que registras alimenta los récords del ejercicio y su curva en el tiempo: peso máximo, máximo de repeticiones y el objetivo que tú mismo te fijas.",
+   "alt": "Estadísticas de un ejercicio: récords de peso y de repeticiones, curva del peso máximo"
+  },
+  "corps": {
+   "h2": "Un cuerpo en 3D que lee tu entrenamiento",
+   "p": "Muestra cómo va tu volumen de la semana frente al objetivo de diez series por grupo muscular, qué músculos se están quedando atrás, dónde progresas y los dolores que señalas. Y cuando no sabes qué entrenar, te propone la sesión del día.",
+   "alt_volume": "Cuerpo 3D, vista Equilibrio: series de la semana por grupo muscular frente a un objetivo de diez",
+   "alt_progression": "Cuerpo 3D, vista Progreso: mejora por región en 30 días",
+   "alt_seance": "¿Qué hacer hoy? Una sesión de ejercicios propuesta para los músculos que están listos"
+  },
+  "historique": {
+   "h2": "Tu historial, día a día",
+   "p": "El calendario marca tus días de entrenamiento, y cada sesión guarda sus series, pesos y repeticiones.",
+   "alt": "Historial: calendario de octubre de 2026 y las series de una sesión"
+  },
+  "aria_promesses": "Lo que promete la app",
+  "promesses": [
+   {
+    "h3": "Tus datos son tuyos",
+    "p": "No necesitas cuenta: la app funciona en tu teléfono, incluso sin conexión. Si activas la sincronización, la copia va a tu propio Google Drive, y a ningún otro lugar."
+   },
+   {
+    "h3": "Sin rastreadores, sin anuncios",
+    "p": "Ni publicidad ni analítica, ni en la app ni en este sitio."
+   },
+   {
+    "h3": "Pago único",
+    "p": "Una sola compra. Sin suscripción, nada que desbloquear después."
+   },
+   {
+    "h3": "En 9 idiomas",
+    "p": "La app sigue el idioma de tu teléfono, o el que elijas para ella."
+   }
+  ]
+ },
+ "support": {
+  "title": "Soporte · Limit Breaker",
+  "description": "Ayuda de Limit Breaker: sincronización con Google Drive, cambio de teléfono, reembolsos, idiomas, eliminación de tus datos, contacto.",
+  "h1": "Soporte",
+  "corps_html": "    <p class=\"encadre\">Una pregunta, un error, una idea: escribe a <a href=\"mailto:contact@limitbreakerfit.com\">contact@limitbreakerfit.com</a>. Respondemos en inglés o en francés.</p>\n\n    <details>\n      <summary>¿Cómo hago una copia de seguridad de mis sesiones en Google Drive?</summary>\n      <p>En el menú ☰, abre <strong>Ajustes</strong> e inicia sesión con tu cuenta de Google. Después, la app te pide acceso a tu Drive: solo ve los archivos que crea ella misma, en una carpeta llamada <code>LimitBreakerFitApp</code>. Deja que la subida automática haga su trabajo, o toca <strong>Sincronizar ahora</strong>.</p>\n      <p>La sincronización es opcional: sin ella, todo se queda en tu teléfono.</p>\n    </details>\n\n    <details>\n      <summary>Voy a cambiar de teléfono: ¿cómo recupero mis datos?</summary>\n      <p>Instala Limit Breaker en el teléfono nuevo con la misma cuenta de Google Play, inicia sesión con la misma cuenta de Google en <strong>Ajustes</strong> y sincroniza: tus sesiones vuelven desde tu Drive.</p>\n      <p>Si nunca activaste la sincronización en el teléfono anterior, tus datos nunca salieron de él: sincroniza primero desde el teléfono anterior.</p>\n    </details>\n\n    <details>\n      <summary>¿La app funciona sin conexión?</summary>\n      <p>Sí. Todo se registra y se consulta sin conexión; solo la sincronización con Drive necesita conexión.</p>\n    </details>\n\n    <details>\n      <summary>¿Cómo pido un reembolso?</summary>\n      <p>Las compras pasan por Google Play, que gestiona los reembolsos. Puedes devolver la app tú mismo desde Google Play en las dos horas siguientes a la compra. Después, Google revisa las solicitudes hechas en un plazo de 48 horas. Pasado ese plazo, escríbenos a <a href=\"mailto:contact@limitbreakerfit.com\">contact@limitbreakerfit.com</a>.</p>\n    </details>\n\n    <details>\n      <summary>¿Cómo cambio el idioma de la app?</summary>\n      <p>La app sigue el idioma de tu teléfono. También puedes elegirle otro sin tocar el resto del teléfono: <strong>Ajustes → Aplicaciones → Limit Breaker → Idioma</strong>. Hay nueve idiomas disponibles: español, inglés, francés, alemán, italiano, portugués, japonés, coreano y chino.</p>\n    </details>\n\n    <details>\n      <summary>¿Cómo elimino todos mis datos?</summary>\n      <p><strong>En tu teléfono</strong>: desinstalar la app elimina todo lo que guarda en él.</p>\n      <p><strong>En tu Drive</strong>: la copia te pertenece; elimina la carpeta <code>LimitBreakerFitApp</code>. Para retirarle a la app el acceso a tu cuenta de Google: <a href=\"https://myaccount.google.com/permissions\">myaccount.google.com/permissions</a>.</p>\n      <p><strong>En la copia de seguridad de Android</strong>: si la copia de seguridad de tu teléfono está activada, Android puede copiar en ella los datos de la app (nunca tus fotos de progreso). La gestionas en los ajustes de copia de seguridad de tu teléfono.</p>\n      <p>No tenemos nada que eliminar por nuestra parte: tus datos nunca nos llegan. Los detalles están en la <a href=\"{prefixe}privacy/\">política de privacidad</a>.</p>\n    </details>\n  "
+ },
+ "privacy": {
+  "title": "Política de privacidad · Limit Breaker",
+  "description": "Política de privacidad de la app Android Limit Breaker y de limitbreakerfit.com: tus datos se quedan en tu teléfono y en tu propio Google Drive.",
+  "h1": "Política de privacidad",
+  "maj": "Última actualización: 13 de octubre de 2026",
+  "corps_html": "    <div class=\"encadre\">\n      <p><strong>En resumen.</strong> Tus datos se quedan en tu teléfono. Si activas la sincronización, una copia va a <strong>tu propio</strong> Google Drive. No recibimos ninguno de tus datos: sin servidor propio, sin cuenta con nosotros, sin publicidad, sin analítica, sin rastreadores. Puedes eliminarlo todo tú mismo, en cualquier momento.</p>\n    </div>\n\n    <h2>Responsable y contacto</h2>\n    <p>Esta política cubre la app Android <strong>Limit Breaker</strong>, distribuida en Google Play, y este sitio web, <strong>limitbreakerfit.com</strong>.</p>\n    <p>Responsable de la protección de la información personal: el desarrollador de Limit Breaker, en <a href=\"mailto:contact@limitbreakerfit.com\">contact@limitbreakerfit.com</a>.</p>\n\n    <h2>Lo que la app guarda en tu teléfono</h2>\n    <ul>\n      <li>Tus ejercicios, entrenamientos y sesiones: series, pesos, repeticiones y otras medidas, fechas, notas, etiquetas y favoritos.</li>\n      <li>Los dolores que señalas: la zona afectada (un músculo o una articulación), la fecha en que señalas el dolor y la fecha en que lo quitas. <strong>Son datos de salud</strong>: quedan bajo tu control, igual que todo lo demás.</li>\n      <li>Tus fotos de progreso, si tomas alguna, y las imágenes que añades a tus ejercicios.</li>\n      <li>Tus ajustes.</li>\n      <li>Si inicias sesión con Google: el nombre, la dirección de correo electrónico y la dirección de la foto de perfil de tu cuenta, para mostrar quién ha iniciado sesión.</li>\n    </ul>\n    <p>Todo se guarda en el espacio privado de la app en tu teléfono. No tenemos acceso a él.</p>\n    <p>La app usa la <strong>cámara</strong> solo cuando tomas una foto de progreso. No necesita ningún otro permiso sensible.</p>\n\n    <h2>Sincronización con tu Google Drive (opcional)</h2>\n    <p>Si conectas tu cuenta de Google y autorizas Drive, la app copia en tu Drive, en una carpeta llamada <code>LimitBreakerFitApp</code>: tus datos de entrenamiento (incluidos los dolores señalados), las imágenes de tus ejercicios, tus fotos de progreso y copias archivadas de sus versiones anteriores.</p>\n    <ul>\n      <li>El permiso solicitado es <code>drive.file</code>: la app ve y modifica <strong>solo los archivos que ha creado ella misma</strong>. No tiene acceso al resto de tu Drive.</li>\n      <li>Los datos viajan directamente entre tu teléfono y Google, cifrados en tránsito (HTTPS). Nunca pasan por nosotros.</li>\n      <li>Google conserva esta copia según sus propias condiciones y su <a href=\"https://policies.google.com/privacy\">política de privacidad</a>.</li>\n    </ul>\n\n    <h2>Los datos de tu cuenta de Google</h2>\n    <ul>\n      <li><strong>Acceso</strong>: mediante el inicio de sesión con Google, tu nombre, tu dirección de correo electrónico y la dirección de tu foto de perfil; mediante el permiso de Drive <code>drive.file</code>, solo los archivos que creó la app.</li>\n      <li><strong>Uso</strong>: mostrar la cuenta con la que has iniciado sesión, y guardar y luego volver a leer la copia de tus datos en tu Drive. Nada más: ni publicidad, ni elaboración de perfiles, ni venta, ni entrenamiento de modelos de inteligencia artificial.</li>\n      <li><strong>Almacenamiento</strong>: tu nombre, tu correo electrónico y la dirección de tu foto, en tu teléfono; tus archivos, en tu Drive. La app no guarda ninguna contraseña.</li>\n      <li><strong>Uso compartido</strong>: ninguno. Estos datos nunca nos llegan, y la app no se los pasa a nadie.</li>\n    </ul>\n\n    <h2>Lo que no hacemos</h2>\n    <ul>\n      <li>Sin servidor propio, sin cuenta que crear con nosotros.</li>\n      <li>Sin publicidad.</li>\n      <li>Sin herramientas de analítica, de medición de audiencia ni de seguimiento, ni en la app ni en este sitio.</li>\n      <li>Sin venta, alquiler ni cesión de datos.</li>\n    </ul>\n\n    <h2>Servicios de terceros implicados</h2>\n    <ul>\n      <li><strong>Google Play</strong> gestiona la compra, los reembolsos, la instalación y las actualizaciones, según la <a href=\"https://policies.google.com/privacy\">política de privacidad de Google</a>.</li>\n    </ul>\n\n    <h2>Si nos escribes</h2>\n    <p>Si nos escribes, usamos tu dirección y tu mensaje únicamente para responderte, y los conservamos el tiempo necesario para atender tu solicitud.</p>\n\n    <h2>Este sitio web</h2>\n    <p>limitbreakerfit.com no usa cookies, ni analítica, ni contenido de terceros.</p>\n\n    <h2>Conservación y eliminación</h2>\n    <ul>\n      <li><strong>En tu teléfono</strong>: tus datos permanecen hasta que los eliminas en la app o desinstalas la app, lo que lo borra todo.</li>\n      <li><strong>En tu Drive</strong>: mientras los conserves allí. Elimina la carpeta <code>LimitBreakerFitApp</code> para borrarlos, y retira el acceso de la app en <a href=\"https://myaccount.google.com/permissions\">myaccount.google.com/permissions</a>.</li>\n    </ul>\n    <p>No tenemos ningún otro dato sobre ti.</p>\n\n    <h2>Seguridad</h2>\n    <p>Android aísla los datos de la app en su espacio privado. Los intercambios con Google están cifrados. El acceso a tu Drive pasa por un permiso de Google que puedes retirar en cualquier momento, y la app solo ve sus propios archivos.</p>\n\n    <h2>Tus derechos</h2>\n    <p>Puedes pedirnos el acceso a tu información, su corrección o su eliminación en <a href=\"mailto:contact@limitbreakerfit.com\">contact@limitbreakerfit.com</a>, o dirigirte a una autoridad de protección de datos (la CNIL en Francia, la Commission d'accès à l'information en Quebec).</p>\n\n    <h2>Cambios</h2>\n    <p>Si esta política cambia, la fecha que figura al principio de la página cambia con ella. Un cambio importante se anunciará también en las notas de la versión de la app.</p>\n  "
+ }
+}

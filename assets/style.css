@@ -26,7 +26,7 @@ img { max-width: 100%; height: auto; display: block; }
 .tete { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; border-bottom: 1px solid var(--trait); flex-wrap: wrap; }
 .tete .marque { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 .tete .marque img { width: 32px; height: 32px; border-radius: 8px; }
-.tete nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; }
+.tete nav { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-size: 15px; }
 .tete nav a { text-decoration: none; color: var(--sourd); }
 .tete nav a:hover, .tete nav a:focus-visible, .tete nav a[aria-current="page"] { color: var(--texte); }
 
@@ -38,7 +38,6 @@ h3 { font-size: 19px; margin: 0; }
 
 /* Ouverture */
 .ouverture { display: grid; gap: 28px; padding-block: 48px 40px; text-align: center; justify-items: center; }
-.ouverture .titre { width: min(560px, 100%); }
 .ouverture h1 { max-width: 20ch; }
 .ouverture .chapeau { color: var(--sourd); max-width: 58ch; margin: 0; font-size: 18px; }
 .bientot { display: inline-flex; gap: 10px; align-items: center; border: 1px solid var(--neon); color: var(--texte); border-radius: 999px; padding: 10px 22px; font-weight: 700; letter-spacing: .03em; }
@@ -46,15 +45,17 @@ h3 { font-size: 19px; margin: 0; }
 
 /* Sections avec capture */
 .bloc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 40px; align-items: center; padding-block: 44px; border-top: 1px solid var(--trait); }
-.bloc:nth-of-type(even) { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
-.bloc:nth-of-type(even) .capture { order: -1; }
+.bloc.inverse { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
+.bloc.inverse .capture { order: -1; }
 .bloc .texte { display: grid; gap: 14px; }
 .bloc p { margin: 0; color: var(--sourd); max-width: 60ch; }
 .capture { border-radius: 26px; overflow: hidden; border: 1px solid var(--trait); box-shadow: 0 0 40px rgba(255, 34, 34, .12); background: var(--surface); }
 
 /* Trois promesses */
-.promesses { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; padding-block: 44px; border-top: 1px solid var(--trait); }
-.promesse { background: var(--surface); border: 1px solid var(--trait); border-radius: 14px; padding: 20px; display: grid; gap: 8px; }
+.promesses { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; padding-block: 44px; border-top: 1px solid var(--trait); }
+@media (max-width: 900px) { .promesses { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .promesses { grid-template-columns: minmax(0, 1fr); } }
+.promesse { background: var(--surface); border: 1px solid var(--trait); border-radius: 14px; padding: 20px; display: grid; gap: 8px; align-content: start; }
 .promesse p { margin: 0; color: var(--sourd); }
 
 /* Pages de texte */
@@ -70,12 +71,57 @@ details summary { cursor: pointer; font-weight: 700; }
 details[open] summary { margin-bottom: 8px; }
 details p { margin: 0 0 8px; }
 
+/* Sélecteur de langue — un <details>, donc sans script */
+.langue { position: relative; }
+.langue summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; color: var(--sourd); }
+.langue summary::-webkit-details-marker { display: none; }
+.langue summary:hover, .langue[open] summary { color: var(--texte); }
+.langue ul { position: absolute; right: 0; top: calc(100% + 8px); z-index: 5; margin: 0; padding: 6px; list-style: none; min-width: 190px; background: var(--surface); border: 1px solid var(--trait); border-radius: 12px; box-shadow: 0 12px 30px rgba(0, 0, 0, .5); }
+.langue li a { display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none; color: var(--texte); }
+.langue li a:hover, .langue li a:focus-visible { background: var(--fond); color: var(--neon); }
+.langue li a[aria-current="true"] { color: var(--neon); font-weight: 700; }
+
+/* Titre en feu : la vidéo de flammes de l'app, le noir rendu transparent par le mode écran */
+.titre-feu { position: relative; width: min(620px, 100%); aspect-ratio: 1080 / 599; }
+.titre-feu .feu, .titre-feu .feu-fixe { position: absolute; inset: -6% 0 0 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: screen; }
+.titre-feu .feu-fixe { display: none; }
+.titre-feu .titre { position: relative; width: 100%; height: auto; }
+@media (prefers-reduced-motion: reduce) {
+  .titre-feu .feu { display: none; }
+  .titre-feu .feu-fixe { display: block; }
+}
+
+/* La bande des niveaux */
+.auras { display: grid; gap: 14px; padding-block: 44px; border-top: 1px solid var(--trait); }
+.auras > p { margin: 0; color: var(--sourd); max-width: 60ch; }
+.bande { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(118px, 1fr); gap: 12px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; }
+.bande figure { margin: 0; scroll-snap-align: start; display: grid; gap: 6px; }
+.bande img { border-radius: 12px; border: 1px solid var(--trait); width: 100%; aspect-ratio: 605 / 470; object-fit: cover; }
+.bande figcaption { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--sourd); text-align: center; }
+
+/* La séance : deux captures côte à côte */
+.seance { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 40px; align-items: center; padding-block: 44px; border-top: 1px solid var(--trait); }
+.seance .texte { display: grid; gap: 14px; }
+.seance .texte p { margin: 0; color: var(--sourd); max-width: 60ch; }
+.duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 720px) { .seance { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+
+/* Le corps en 3D : trois vues */
+.corps3d { display: grid; gap: 24px; padding-block: 44px; border-top: 1px solid var(--trait); }
+.corps3d .texte { display: grid; gap: 14px; }
+.corps3d .texte p { margin: 0; color: var(--sourd); max-width: 70ch; }
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 720px) {
+  .trio { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .trio .capture { scroll-snap-align: start; }
+}
+
 /* Pied */
 .pied { border-top: 1px solid var(--trait); padding-block: 26px 40px; color: var(--sourd); font-size: 15px; display: flex; gap: 12px 24px; flex-wrap: wrap; justify-content: space-between; }
 .pied nav { display: flex; gap: 18px; flex-wrap: wrap; }
 
 @media (max-width: 720px) {
-  .bloc, .bloc:nth-of-type(even) { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .bloc .capture, .bloc:nth-of-type(even) .capture { order: 0; max-width: 300px; justify-self: center; width: 100%; }
+  .bloc, .bloc.inverse { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .bloc .capture, .bloc.inverse .capture { order: 0; max-width: 300px; justify-self: center; width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
