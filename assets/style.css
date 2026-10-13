@@ -1,0 +1,81 @@
+/* Limit Breaker — site vitrine.
+   Palette reprise du thème de l'app (Theme.kt). Polices du système uniquement : aucune requête
+   vers un tiers, la promesse de l'app tenue jusque dans sa vitrine. */
+:root {
+  --fond: #0A0505;
+  --surface: #171010;
+  --trait: #3B2727;
+  --texte: #F5EDED;
+  --sourd: #B3A3A3;
+  --neon: #FF2222;
+  --braise: #6E0B0B;
+  --f: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fond); color: var(--texte); font-family: var(--f); font-size: 17px; line-height: 1.6; }
+a { color: var(--texte); text-decoration-color: var(--neon); text-underline-offset: 3px; }
+a:hover, a:focus-visible { color: var(--neon); }
+:focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+
+.page { max-width: 1040px; margin: 0 auto; padding-inline: 20px; }
+
+/* En-tête */
+.tete { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; border-bottom: 1px solid var(--trait); flex-wrap: wrap; }
+.tete .marque { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.tete .marque img { width: 32px; height: 32px; border-radius: 8px; }
+.tete nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; }
+.tete nav a { text-decoration: none; color: var(--sourd); }
+.tete nav a:hover, .tete nav a:focus-visible, .tete nav a[aria-current="page"] { color: var(--texte); }
+
+/* Titres */
+h1, h2 { font-weight: 900; text-transform: uppercase; letter-spacing: .02em; line-height: 1.1; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(34px, 6vw, 56px); }
+h2 { font-size: clamp(26px, 4vw, 36px); color: var(--neon); text-shadow: 0 0 18px rgba(255, 34, 34, .45); }
+h3 { font-size: 19px; margin: 0; }
+
+/* Ouverture */
+.ouverture { display: grid; gap: 28px; padding-block: 48px 40px; text-align: center; justify-items: center; }
+.ouverture .titre { width: min(560px, 100%); }
+.ouverture h1 { max-width: 20ch; }
+.ouverture .chapeau { color: var(--sourd); max-width: 58ch; margin: 0; font-size: 18px; }
+.bientot { display: inline-flex; gap: 10px; align-items: center; border: 1px solid var(--neon); color: var(--texte); border-radius: 999px; padding: 10px 22px; font-weight: 700; letter-spacing: .03em; }
+.bientot::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--neon); box-shadow: 0 0 10px var(--neon); }
+
+/* Sections avec capture */
+.bloc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 40px; align-items: center; padding-block: 44px; border-top: 1px solid var(--trait); }
+.bloc:nth-of-type(even) { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
+.bloc:nth-of-type(even) .capture { order: -1; }
+.bloc .texte { display: grid; gap: 14px; }
+.bloc p { margin: 0; color: var(--sourd); max-width: 60ch; }
+.capture { border-radius: 26px; overflow: hidden; border: 1px solid var(--trait); box-shadow: 0 0 40px rgba(255, 34, 34, .12); background: var(--surface); }
+
+/* Trois promesses */
+.promesses { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; padding-block: 44px; border-top: 1px solid var(--trait); }
+.promesse { background: var(--surface); border: 1px solid var(--trait); border-radius: 14px; padding: 20px; display: grid; gap: 8px; }
+.promesse p { margin: 0; color: var(--sourd); }
+
+/* Pages de texte */
+.texte-long { max-width: 72ch; padding-block: 40px 56px; display: grid; gap: 14px; }
+.texte-long h1 { font-size: clamp(30px, 5vw, 44px); margin-bottom: 6px; }
+.texte-long h2 { font-size: 22px; margin-top: 22px; text-shadow: none; }
+.texte-long p, .texte-long li { color: #DCCFCF; }
+.texte-long ul { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+.texte-long .maj { color: var(--sourd); font-size: 15px; }
+.encadre { background: var(--surface); border: 1px solid var(--trait); border-radius: 12px; padding: 16px 18px; }
+details { background: var(--surface); border: 1px solid var(--trait); border-radius: 12px; padding: 14px 18px; }
+details summary { cursor: pointer; font-weight: 700; }
+details[open] summary { margin-bottom: 8px; }
+details p { margin: 0 0 8px; }
+
+/* Pied */
+.pied { border-top: 1px solid var(--trait); padding-block: 26px 40px; color: var(--sourd); font-size: 15px; display: flex; gap: 12px 24px; flex-wrap: wrap; justify-content: space-between; }
+.pied nav { display: flex; gap: 18px; flex-wrap: wrap; }
+
+@media (max-width: 720px) {
+  .bloc, .bloc:nth-of-type(even) { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .bloc .capture, .bloc:nth-of-type(even) .capture { order: 0; max-width: 300px; justify-self: center; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
