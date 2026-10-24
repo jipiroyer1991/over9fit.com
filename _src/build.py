@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Génère le site de Limit Breaker dans ses neuf langues.
+"""Génère le site de Over9 dans ses neuf langues.
 
     python3 _src/build.py
 
@@ -21,7 +21,7 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent.parent
 TEXTES = RACINE / "_src" / "textes"
 ORDRE = ["en", "fr", "de", "es", "it", "pt", "ja", "ko", "zh"]
-DOMAINE = "https://limitbreakerfit.com"
+DOMAINE = "https://over9fit.com"
 NIVEAUX_MONTRES = [1, 9, 13, 18, 24, 25, 26]
 PAGES = {"accueil": "", "support": "support/", "privacy": "privacy/"}
 
@@ -93,7 +93,7 @@ def entete(langues, code, page):
     c = t["commun"]
     courant = lambda p: ' aria-current="page"' if p == page else ""
     return f"""  <header class="tete">
-    <a class="marque" href="{url(langues, code, "accueil")}"><img src="/assets/img/icone-192.png" alt="" width="32" height="32">Limit Breaker</a>
+    <a class="marque" href="{url(langues, code, "accueil")}"><img src="/assets/img/icone-192.png" alt="" width="32" height="32">Over9</a>
     <nav aria-label="{e(c["aria_nav"])}">
       <a href="{url(langues, code, "support")}"{courant("support")}>{e(c["nav_support"])}</a>
       <a href="{url(langues, code, "privacy")}"{courant("privacy")}>{e(c["nav_privacy"])}</a>
@@ -107,7 +107,7 @@ def pied(langues, code):
     c = t["commun"]
     mentions = f'\n      <a href="/fr/mentions-legales/">{e(c["mentions"])}</a>' if "mentions" in c else ""
     return f"""  <footer class="pied">
-    <span>© 2026 Limit Breaker · <a href="mailto:contact@limitbreakerfit.com">contact@limitbreakerfit.com</a></span>
+    <span>© 2026 Over9 · <a href="mailto:contact@over9fit.com">contact@over9fit.com</a></span>
     <nav aria-label="{e(c["aria_pied"])}">
       <a href="{url(langues, code, "accueil")}">{e(c["nav_home"])}</a>
       <a href="{url(langues, code, "support")}">{e(c["nav_support"])}</a>
@@ -153,7 +153,7 @@ def accueil(langues, code):
         <video class="feu" autoplay muted loop playsinline preload="auto" aria-hidden="true" poster="/assets/img/feu.webp">
           <source src="/assets/video/feu.mp4" type="video/mp4">
         </video>
-        <img class="titre" src="/assets/img/titre.webp" alt="Limit Breaker" width="1080" height="599">
+        <img class="titre" src="/assets/img/titre.webp" alt="Over9" width="1080" height="599">
       </div>
       <h1>{e(a["h1"])}</h1>
       <p class="chapeau">{e(a["chapeau"])}</p>
