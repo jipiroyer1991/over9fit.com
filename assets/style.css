@@ -84,10 +84,16 @@ details p { margin: 0 0 8px; }
 @media (max-width: 480px) { .tete { position: relative; } .langue { position: static; } .langue ul { left: 0; right: 0; } }
 
 /* Titre en feu : la vidéo de flammes de l'app, le noir rendu transparent par le mode écran */
-.titre-feu { position: relative; width: min(620px, 100%); aspect-ratio: 1080 / 599; }
+.titre-bloc { width: min(620px, 100%); }
+.titre-feu { position: relative; width: 100%; aspect-ratio: 1080 / 599; }
 .titre-feu .feu, .titre-feu .feu-fixe { position: absolute; inset: -6% 0 0 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: screen; }
 .titre-feu .feu-fixe { display: none; }
 .titre-feu .titre { position: relative; width: 100%; height: auto; }
+/* Le K de l'icône collé sous le titre, qui se lit « OVER 9 K » : les proportions de la fin de la
+   vidéo de la fiche Play (montage_fiche.py). Le dessin y fait 45 % de la largeur du OVER 9, et son
+   centre tombe 43 % de cette largeur sous celui du titre ; ici le OVER 9 occupe 67,8 % de l'image.
+   Les pourcentages de marge se rapportent à la largeur du bloc. */
+.titre-bloc .logo-k { position: relative; width: 31%; margin: -13.7% auto 0; }
 @media (prefers-reduced-motion: reduce) {
   .titre-feu .feu { display: none; }
   .titre-feu .feu-fixe { display: block; }
