@@ -5,8 +5,8 @@
 
 **Une seule mise en page, un fichier de textes par langue** (`_src/textes/<code>.json`) : les neuf
 versions ne peuvent pas diverger de structure, et une correction de gabarit les touche toutes. Le
-site produit est statique — aucun script, aucune requête vers un tiers — et c'est lui que GitHub
-Pages sert ; ce dossier `_src` n'est que sa source.
+site produit est statique — aucun script, aucune requête vers un tiers — et c'est lui que Netlify
+sert ; ce dossier `_src` n'est que sa source, jamais publiée (`_src/publier.sh`).
 
 L'anglais vit à la racine (`/`), chaque autre langue sous son code (`/fr/`, `/de/`…). Les captures
 sont propres à chaque langue (`assets/img/<code>-<écran>.webp`) ; la bande des niveaux, faite des
