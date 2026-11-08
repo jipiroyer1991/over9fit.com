@@ -22,8 +22,8 @@
   "seance": {
    "h2": "Sua sessão, registrada em poucos toques",
    "p": "Inicie um treino: cada exercício abre pré-preenchido com sua última sessão. Ajuste o peso ou as repetições e depois salve. A calculadora de discos mostra o que colocar de cada lado da barra. Em cada exercício, você pode colocar a sua própria imagem: uma foto tirada com o seu aparelho ou qualquer imagem que você escolher.",
-   "alt_seance": "Sessão em andamento: supino reto, pré-preenchido com a última sessão (195 × 3, 185 × 9, 175 × 7)",
-   "alt_disques": "Calculadora de discos: 195 lbs, ou seja, 45 + 25 + 5 de cada lado, barra de 45 lbs incluída"
+   "alt_seance": "Sessão em andamento: supino reto, pré-preenchido com a última sessão (175 × 10, 185 × 10, 190 × 9)",
+   "alt_disques": "Calculadora de discos: 175 lbs, ou seja, 45 + 10 + 10 de cada lado, barra de 45 lbs incluída"
   },
   "niveau": {
    "h2": "Seu nível e o que falta",

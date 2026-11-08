@@ -22,8 +22,8 @@
   "seance": {
    "h2": "Deine Einheit, mit ein paar Fingertipps erfasst",
    "p": "Starte ein Workout: Jede Übung öffnet sich, vorausgefüllt mit deiner letzten Einheit. Passe ein Gewicht oder die Wiederholungen an und speichere. Der Scheibenrechner sagt dir, was du auf jede Seite der Stange auflegst. Du kannst jeder Übung dein eigenes Bild geben: ein Foto, das du mit deinem Telefon machst, oder ein Bild deiner Wahl.",
-   "alt_seance": "Laufende Einheit: Bankdrücken, vorausgefüllt mit der letzten Einheit (195 × 3, 185 × 9, 175 × 7)",
-   "alt_disques": "Scheibenrechner: 195 lbs, also 45 + 25 + 5 pro Seite, inkl. 45 lbs Stange"
+   "alt_seance": "Laufende Einheit: Bankdrücken, vorausgefüllt mit der letzten Einheit (175 × 10, 185 × 10, 190 × 9)",
+   "alt_disques": "Scheibenrechner: 175 lbs, also 45 + 10 + 10 pro Seite, inkl. 45 lbs Stange"
   },
   "niveau": {
    "h2": "Deine Stufe und was noch fehlt",

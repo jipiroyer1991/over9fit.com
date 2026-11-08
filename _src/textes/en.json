@@ -22,8 +22,8 @@
   "seance": {
    "h2": "Your session, logged in a few taps",
    "p": "Start a workout: each exercise opens pre-filled with your last session. Adjust a weight or the reps, then save. The plate calculator tells you what to load on each side of the bar. Each exercise can show your own image: a photo you take with your phone, or any image you choose.",
-   "alt_seance": "Session in progress: bench press, pre-filled with the last session (195 × 3, 185 × 9, 175 × 7)",
-   "alt_disques": "Plate calculator: 195 lbs is 45 + 25 + 5 on each side of a 45 lb bar"
+   "alt_seance": "Session in progress: bench press, pre-filled with the last session (175 × 10, 185 × 10, 190 × 9)",
+   "alt_disques": "Plate calculator: 175 lbs is 45 + 10 + 10 on each side of a 45 lb bar"
   },
   "niveau": {
    "h2": "Your level, and what's left",

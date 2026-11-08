@@ -121,8 +121,19 @@ def pied(langues, code):
 
 
 def capture(code, ecran, alt):
-    return (f'<img class="capture" src="/assets/img/{code}-{ecran}.webp" alt="{e(alt)}" '
-            f'width="540" height="1066" loading="lazy">')
+    """Une capture en deux largeurs : 540 px pour un écran ordinaire, 1080 px — l'écran du Pixel 9,
+    sans réduction — pour un écran dense. Une capture s'affiche à 400 px CSS sur ordinateur, à
+    300 au plus sur téléphone ; un téléphone à 2,6 pixels par point en demande donc ~790, ce que la
+    seule version 540 étirait de moitié (mesuré le 2026-11-08).
+
+    **Sauf l'accueil**, gardé tel quel par l'usager le 2026-11-08 — niveau 18, aura dorée : sa
+    capture d'origine n'existe plus qu'en 540 × 1066, d'où une seule largeur."""
+    if ecran == "accueil":
+        return (f'<img class="capture" src="/assets/img/{code}-accueil.webp" alt="{e(alt)}" '
+                f'width="540" height="1066" loading="lazy">')
+    base = f"/assets/img/{code}-{ecran}"
+    return (f'<img class="capture" src="{base}-540.webp" srcset="{base}-540.webp 540w, {base}.webp 1080w" '
+            f'sizes="(min-width: 721px) 400px, 330px" alt="{e(alt)}" width="1080" height="2162" loading="lazy">')
 
 
 def accueil(langues, code):

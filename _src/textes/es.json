@@ -22,8 +22,8 @@
   "seance": {
    "h2": "Tu sesión, registrada en pocos toques",
    "p": "Empieza un entrenamiento: cada ejercicio se abre precargado con tu última sesión. Ajusta un peso o las repeticiones y luego guarda. La calculadora de discos te dice qué cargar a cada lado de la barra. Puedes darle a cada ejercicio tu propia imagen: una foto tomada con tu teléfono o cualquier imagen que elijas.",
-   "alt_seance": "Sesión en curso: press de banca, precargado con la última sesión (195 × 3, 185 × 9, 175 × 7)",
-   "alt_disques": "Calculadora de discos: 195 lbs, es decir, 45 + 25 + 5 por lado, barra de 45 lbs incluida"
+   "alt_seance": "Sesión en curso: press de banca, precargado con la última sesión (175 × 10, 185 × 10, 190 × 9)",
+   "alt_disques": "Calculadora de discos: 175 lbs, es decir, 45 + 10 + 10 por lado, barra de 45 lbs incluida"
   },
   "niveau": {
    "h2": "Tu nivel y lo que te falta",

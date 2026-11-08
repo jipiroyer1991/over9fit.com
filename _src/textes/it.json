@@ -22,8 +22,8 @@
   "seance": {
    "h2": "La tua sessione, registrata in pochi tocchi",
    "p": "Inizia un allenamento: ogni esercizio si apre precompilato con la tua ultima sessione. Regola un peso o le ripetizioni, poi salva. Il calcolatore dei dischi ti dice cosa caricare su ogni lato del bilanciere. Puoi dare a ogni esercizio un'immagine tutta tua: una foto scattata con il tuo telefono o qualsiasi immagine a tua scelta.",
-   "alt_seance": "Sessione in corso: panca piana, precompilata con l'ultima sessione (195 × 3, 185 × 9, 175 × 7)",
-   "alt_disques": "Calcolatore dei dischi: 195 lbs, cioè 45 + 25 + 5 per lato, bilanciere da 45 lbs incluso"
+   "alt_seance": "Sessione in corso: panca piana, precompilata con l'ultima sessione (175 × 10, 185 × 10, 190 × 9)",
+   "alt_disques": "Calcolatore dei dischi: 175 lbs, cioè 45 + 10 + 10 per lato, bilanciere da 45 lbs incluso"
   },
   "niveau": {
    "h2": "Il tuo livello e quanto ti manca",

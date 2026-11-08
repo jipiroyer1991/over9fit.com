@@ -23,8 +23,8 @@
   "seance": {
    "h2": "Ta séance, notée en quelques touches",
    "p": "Démarre un entraînement : chaque exercice s'ouvre prérempli avec ta dernière séance. Ajuste une charge ou des répétitions, puis enregistre. Le calculateur de disques te dit quoi charger de chaque côté de la barre. Tu peux donner à chaque exercice ta propre image : une photo prise avec ton téléphone, ou l'image de ton choix.",
-   "alt_seance": "Séance en cours : le développé couché, prérempli avec la dernière séance (195 × 3, 185 × 9, 175 × 7)",
-   "alt_disques": "Calculateur de disques : 195 lbs, soit 45 + 25 + 5 de chaque côté, barre de 45 lbs comprise"
+   "alt_seance": "Séance en cours : le développé couché, prérempli avec la dernière séance (175 × 10, 185 × 10, 190 × 9)",
+   "alt_disques": "Calculateur de disques : 175 lbs, soit 45 + 10 + 10 de chaque côté, barre de 45 lbs comprise"
   },
   "niveau": {
    "h2": "Ton niveau, et ce qu'il te reste",

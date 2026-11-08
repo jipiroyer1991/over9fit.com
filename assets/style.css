@@ -44,8 +44,10 @@ h3 { font-size: 19px; margin: 0; }
 .bientot::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--neon); box-shadow: 0 0 10px var(--neon); }
 
 /* Sections avec capture */
-.bloc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 40px; align-items: center; padding-block: 44px; border-top: 1px solid var(--trait); }
-.bloc.inverse { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
+/* Une capture est un écran de téléphone entier : à 300 px de large, son texte tombait à 9 px sur un
+   écran d'ordinateur ; à 400 px, il en fait 13 à 14 (mesuré le 2026-11-08). */
+.bloc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 400px); gap: 40px; align-items: center; padding-block: 44px; border-top: 1px solid var(--trait); }
+.bloc.inverse { grid-template-columns: minmax(0, 400px) minmax(0, 1fr); }
 .bloc.inverse .capture { order: -1; }
 .bloc .texte { display: grid; gap: 14px; }
 .bloc p { margin: 0; color: var(--sourd); max-width: 60ch; }
@@ -108,7 +110,8 @@ details p { margin: 0 0 8px; }
 .bande figcaption { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--sourd); text-align: center; }
 
 /* La séance : deux captures côte à côte */
-.seance { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 40px; align-items: center; padding-block: 44px; border-top: 1px solid var(--trait); }
+.seance { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 44px; border-top: 1px solid var(--trait); }
+.seance .duo { width: 100%; max-width: 818px; justify-self: center; }
 .seance .texte { display: grid; gap: 14px; }
 .seance .texte p { margin: 0; color: var(--sourd); max-width: 60ch; }
 .duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -119,6 +122,10 @@ details p { margin: 0 0 8px; }
 .corps3d .texte { display: grid; gap: 14px; }
 .corps3d .texte p { margin: 0; color: var(--sourd); max-width: 70ch; }
 .trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+/* Les trois vues débordent de la colonne de 1 000 px, jusqu'à 400 px chacune, centrées sur elle. */
+@media (min-width: 1060px) {
+  .trio { margin-inline: calc((min(100vw - 40px, 1000px) - min(100vw - 40px, 1236px)) / 2); }
+}
 @media (max-width: 720px) {
   .trio { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
   .trio .capture { scroll-snap-align: start; }
