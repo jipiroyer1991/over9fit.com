@@ -14,6 +14,8 @@
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+/* Le coréen se coupe entre les mots, pas entre deux syllabes : « 아래 / 에서 » coupait le titre. */
+:lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
 body { margin: 0; background: var(--fond); color: var(--texte); font-family: var(--f); font-size: 17px; line-height: 1.6; }
 a { color: var(--texte); text-decoration-color: var(--neon); text-underline-offset: 3px; }
 a:hover, a:focus-visible { color: var(--neon); }
